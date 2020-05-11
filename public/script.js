@@ -1,6 +1,6 @@
 const div = document.getElementById('result')
 const the_whole_app = (location)=>{
-    fetch('http://localhost:3000/weather?address='+location)
+    fetch('/weather?address='+location)
     .then(a=>{
         return a.json()
     })
